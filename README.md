@@ -1,6 +1,6 @@
 REU-2023-Tumor-Detection
 
-File structure:
+File structure:<br>
 pkg - run program.py to predict tumor w/ visualization<br>
 data - includes non-augmented image data<br>
 src - includes all code files used in creation of project<br>
