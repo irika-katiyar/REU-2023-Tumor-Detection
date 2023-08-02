@@ -12,3 +12,13 @@ Steps to use pkg:
 3. Predicted masks outputted into folder titled Predicted_Masks
 4. View visualization of ground truth w/ predictions in FinalVisualization.jpg,
    which is in the pkg folder
+
+Training information:
+1. Data can be augmented for training using aug.py
+2. Splitting data into train, test, and valid can be done using ttv_split.py
+3. Train the network using train.py, note: if starting with a pretrained model,
+   indicate its path on line ___ and uncomment
+
+More:
+1. Various graphs can be made using the data, all code can be found in src
+   with filenames starting with "graph_"
