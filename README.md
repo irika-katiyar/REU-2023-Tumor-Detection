@@ -6,13 +6,6 @@ data - includes non-augmented image data<br>
 src - includes all code files used in creation of project<br>
 files - research paper, graph, references<br>
 
-Steps to use pkg:
-1. Place MRI images into folder titled Input_Images
-2. Run program.py
-3. Predicted masks outputted into folder titled Predicted_Masks
-4. View visualization of ground truth w/ predictions in FinalVisualization.jpg,
-   which is in the pkg folder
-
 Training information:
 1. Data can be augmented for training using aug.py
 2. Splitting data into train, test, and valid can be done using ttv_split.py
