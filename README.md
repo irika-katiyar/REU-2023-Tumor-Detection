@@ -1,10 +1,10 @@
 REU-2023-Tumor-Detection
 
 File structure:
-pkg - run program.py to predict tumor w/ visualization
-data - includes non-augmented image data
-src - includes all code files used in creation of project
-files - research paper, graph, references
+pkg - run program.py to predict tumor w/ visualization<br>
+data - includes non-augmented image data<br>
+src - includes all code files used in creation of project<br>
+files - research paper, graph, references<br>
 
 Steps to use pkg:
 1. Place MRI images into folder titled Input_Images
