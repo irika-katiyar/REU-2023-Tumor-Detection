@@ -7,6 +7,7 @@ import os, cv2, glob, skimage
 import numpy as np
 import mahotas as mh
 from PIL import Image
+from tqdm import tqdm
 from tensorflow import keras as kr
 
 
@@ -30,10 +31,10 @@ def predict():
      model = kr.models.load_model(os.path.abspath("model.h5"))
      os.chdir("..")
 
-     for path in paths:
+     for path in tqdm(paths):
           image = cv2.imread(path,0).astype(np.uint8)
           reshape = np.expand_dims([image],axis = 3)
-          pred = model.predict(reshape)[0]
+          pred = model.predict(reshape, verbose=0)[0]
           _,pred = cv2.threshold(pred,.3,255,cv2.THRESH_BINARY)
 
           new_path = os.getcwd() + "/Predicted_Masks/" + path.split("/")[-1]
