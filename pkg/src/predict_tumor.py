@@ -36,7 +36,7 @@ def predict():
           pred = model.predict(reshape)[0]
           _,pred = cv2.threshold(pred,.3,255,cv2.THRESH_BINARY)
 
-          new_path = os.getcwd() + "/Intermediate_Masks/" + path.split("/")[-1]
+          new_path = os.getcwd() + "/Predicted_Masks/" + path.split("/")[-1]
           cv2.imwrite(new_path,pred)
 
 
