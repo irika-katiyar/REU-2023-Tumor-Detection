@@ -7,11 +7,10 @@ src - includes all code files used in creation of project<br>
 files - research paper, graph, references<br>
 
 Training information:
-1. Data can be augmented for training using aug.py
-2. Splitting data into train, test, and valid can be done using ttv_split.py
-3. Train the network using train.py, note: if starting with a pretrained model,
-   indicate its path on line ___ and uncomment
+1. Data can be augmented for training using augmentation.ipynb
+2. Splitting data into train, test, and valid can be done using ttv_split.ipynb
+3. Train the network using train.py, note: if starting with a pretrained model,<br>
+   indicate its path under the "INITIALIZING FILES ETC" section and uncomment
 
 More:
-1. Various graphs can be made using the data, all code can be found in src
-   with filenames starting with "graph_"
+1. Various graphs can be made using the data, all code can be found in src/graphs
